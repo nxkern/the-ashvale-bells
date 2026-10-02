@@ -35,8 +35,8 @@ void Player::draw(std::string action) const {
     DrawPlayerAnimationPro(_animation_idle_east,
                            {(float)x, (float)y, 68.0f, 68.0f}, {0.0f, 0.0f},
                            0.0f, WHITE);
-  if(action== "idle_west")   DrawPlayerAnimationPro(_animation_idle_west,
-                         {(float)x, (float)y, 68.0f, 68.0f}, {0.0f, 0.0f}, 0.0f,
-                         WHITE);
-
+  if (action == "idle_west")
+    DrawPlayerAnimationPro(_animation_idle_west,
+                           {(float)x, (float)y, 68.0f, 68.0f}, {0.0f, 0.0f},
+                           0.0f, WHITE);
 }
