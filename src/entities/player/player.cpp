@@ -36,6 +36,8 @@ Player::~Player() {
   DisposeSpriteAnimation(_animation_running_west);
   DisposeSpriteAnimation(_animation_idle_east);
   DisposeSpriteAnimation(_animation_idle_west);
+  DisposeSpriteAnimation(_animation_jump_west);
+  DisposeSpriteAnimation(_animation_jump_east);
 }
 
 void Player::move(float dx) {
