@@ -74,6 +74,7 @@ Texture2D AnimationFrames(std::string route, int px_width, int px_height) {
 
 void DisposeSpriteAnimation(PlayerAnimation animation) {
   free(animation.rectangles);
+  UnloadTexture(animation.atlas);
 };
 
 void DrawPlayerAnimationPro(PlayerAnimation animation, Rectangle dest,
